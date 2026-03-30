@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Blog</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#/">
+          <span class="brand-dot" aria-hidden="true"></span>
+          <span>Simple Blog</span>
+        </a>
+
+        <nav class="nav">
+          <a class="nav-link" href="#/">Home</a>
+          <a class="nav-link" href="#/new">New post</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container main" id="app" aria-live="polite"></main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span class="muted">No backend. Posts are saved in your browser.</span>
+        <button class="link-btn" id="resetBtn" type="button" title="Clear local posts">
+          Reset demo
+        </button>
+      </div>
+    </footer>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
